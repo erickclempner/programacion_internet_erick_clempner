@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Práctica 6</title>
+		<link rel="stylesheet" href="./estilos.css" />
+	</head>
+	<body>
+			<a href="../index_practicas.html" class="back-to-home" style="margin: 20px;">← Volver al Inicio</a>
+			<h1 class="page-title">Práctica 6: HTML5 Audio/Video, Youtube y GoogleMaps.</h1>
+
+			<h2>Audio HTML5</h2>
+			<audio controls preload="metadata">
+				<source src="./public/01HNRAZQPV5K44MJKP3CFXKF28.mp3" type="audio/mpeg" />
+				Tu navegador no soporta la etiqueta <code>audio</code>.
+			</audio>
+
+			<h2>Vídeo HTML5</h2>
+			<video controls preload="metadata">
+				<source src="./public/Incredible footage of cameraman and hungry polar bear.mp4" type="video/mp4" />
+				Tu navegador no soporta la etiqueta <code>video</code>.
+			</video>
+
+			<h2>Vídeo de YouTube</h2>
+			<iframe
+				class="simple-embed"
+				width="560"
+				height="560"
+				src="https://www.youtube.com/embed/ITKSU2zAZqI"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			></iframe>
+
+				<h2>Google Maps</h2>
+				<iframe
+					class="map-embed"
+					src="https://www.google.com/maps?q=Universidad%20An%C3%A1huac%20M%C3%A9xico&output=embed"
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"
+				></iframe>
+
+				<h2>Facebook: Ferrari</h2>
+
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous"
+            src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v18.0"></script>
+
+            <div class="fb-page"
+                data-href="https://www.facebook.com/Ferrari"
+                data-tabs="timeline"
+                data-width="560"
+                data-height="600"
+                data-adapt-container-width="true"
+                data-small-header="false"
+                data-hide-cover="false"
+                data-show-facepile="false">
+            <blockquote cite="https://www.facebook.com/Ferrari" class="fb-xfbml-parse-ignore">
+                <a href="https://www.facebook.com/Ferrari">Ferrari</a>
+            </blockquote>
+            </div>
+
+
+
+			<h2>Thread de X</h2>
+			<blockquote class="twitter-tweet"><p lang="en" dir="ltr">How to Get Rich (without getting lucky):</p>&mdash; Naval (@naval) <a href="https://twitter.com/naval/status/1002103360646823936?ref_src=twsrc%5Etfw">May 31, 2018</a></blockquote>
+			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</body>
+	</html>

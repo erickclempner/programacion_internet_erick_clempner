@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Básica - Top Videojuegos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .tabla-basica {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .tabla-basica th {
+            background-color: #34495e;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        .tabla-basica td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .tabla-basica tr:nth-child(4n+2) {
+            background-color: #ecf0f1;
+        }
+
+        .tabla-basica tr:nth-child(4n+3) {
+            background-color: #d5dbdb;
+        }
+
+        .tabla-basica tr:nth-child(4n+4) {
+            background-color: #bdc3c7;
+        }
+
+        .volver {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 8px 15px;
+            background-color: #007acc;
+            color: white;
+            text-decoration: none;
+            border-radius: 3px;
+        }
+
+        nav {
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            margin-right: 15px;
+            color: #007acc;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index_practicas.html" class="back-to-home" style="margin: 20px;">← Volver al Inicio</a>
+    <div class="container">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="tabla_avanzada.html">Tabla Avanzada</a>
+            <a href="imagenes.html">Imágenes</a>
+        </nav>
+
+        <h1>Top 10 Videojuegos Más Populares</h1>
+        
+        <table class="tabla-basica">
+            <thead>
+                <tr>
+                    <th>Posición</th>
+                    <th>Nombre del Juego</th>
+                    <th>Género</th>
+                    <th>Año de Lanzamiento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>The Legend of Zelda: Breath of the Wild</td>
+                    <td>Aventura/Acción</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Grand Theft Auto V</td>
+                    <td>Acción/Aventura</td>
+                    <td>2013</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Minecraft</td>
+                    <td>Sandbox</td>
+                    <td>2011</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>The Witcher 3: Wild Hunt</td>
+                    <td>RPG</td>
+                    <td>2015</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Super Mario Odyssey</td>
+                    <td>Plataformas</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Fortnite</td>
+                    <td>Battle Royale</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Red Dead Redemption 2</td>
+                    <td>Acción/Aventura</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Call of Duty: Modern Warfare</td>
+                    <td>Shooter</td>
+                    <td>2019</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Among Us</td>
+                    <td>Social/Deducción</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Animal Crossing: New Horizons</td>
+                    <td>Simulación</td>
+                    <td>2020</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <a href="index.html" class="volver">Volver al inicio</a>
+    </div>
+</body>
+</html>

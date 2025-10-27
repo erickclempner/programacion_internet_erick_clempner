@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de Formularios</title>
+    <link rel="stylesheet" href="../general.css">
+    <script>
+        function filtrado(){
+            var valor = document.getElementById("evaluacion").value;
+            var x = parseFloat(valor);
+            console.log("Llamamos a funcion para determinar evaluacion");
+
+            salida = evaluar(x);
+            document.getElementById("resultado").innerHTML = salida;
+        }
+
+        function evaluar(x){
+            if(x < 6){
+                return "No acreditado";
+            }else if(x < 7.5){
+                return "Suficiente";
+            }else if(x < 9){
+                return "Bien";
+            }else if(x < 10){
+                return "Muy Bien";
+            }else{
+                return "Lider de accion positiva";
+            }
+        }
+
+        function borrar(){
+            document.getElementById("evaluacion").value = "";
+            document.getElementById("resultado").innerHTML = "";
+        }
+    </script>
+</head>
+<body>
+    <a href="../index_practicas.html" class="back-to-home">← Volver al Inicio</a>
+    <h1>Manejo de formularios HTML con JS</h1>
+    <h2>Calificaciones</h2>
+    <p>Ingresa una calificación positiva:</p>
+    <form action="">
+        <input type="text" id="evaluacion"> <br>
+    </form>
+    <button onclick="filtrado()">Evaluar</button>
+    <button onclick="borrar()">Borrar</button>
+    <p id="resultado"></p>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Videojuegos</title>
+    <link rel="stylesheet" href="tablas.css">
+    <script src="registroJuegos.js" defer></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px;}
+        label { display: block; margin-top: 10px; }
+        .checkbox-group, .radio-group { margin-top: 10px; }
+        h1 { 
+            color: gray;
+            border: 1px solid white;
+            font-family: Helvetica, sans-serif;
+            padding: 10px;
+            margin-bottom: 50px; 
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+            box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.8);
+        }
+        h3 { margin-top: 20px; }    
+    </style>
+
+
+
+</head>
+<body>
+    <a href="../index_practicas.html" class="back-to-home" style="margin: 30px;">← Volver al Inicio</a>
+    <h1>Registro de Videojuegos</h1>
+    <form id="formulario" onsubmit="event.preventDefault(); registro1();">
+        <label>
+            Nombre:
+            <input type="text" id="nombre" name="nombre" required>
+        </label>
+        <label>
+            Publisher:
+            <input type="text" id="publisher" name="publisher" required>
+        </label>
+        <div class="checkbox-group">
+            <h3>Consola/Platform:</h3>
+            <label><input type="checkbox" name="platform" value="Steam"> Steam</label>
+            <label><input type="checkbox" name="platform" value="XboxX"> XboxX</label>
+            <label><input type="checkbox" name="platform" value="Play5"> Play5</label>
+            <label><input type="checkbox" name="platform" value="Nintendo Switch"> Nintendo Switch</label>
+        </div>
+        <div class="radio-group">
+            <h3>Medio</h3>
+            <label><input type="radio" name="medio" value="fisico" required> Juego físico</label>
+            <label><input type="radio" name="medio" value="digital"> Juego digital</label>
+            <label><input type="radio" name="medio" value="mesa"> Juego de mesa</label>
+        </div>
+        <label>
+            Fecha de adquisición:
+            <input type="date" id="fecha" name="fecha" required>
+        </label>
+        <label>
+            Que color representa para ti el juego?
+            <input type="color" id="color" name="color" required>
+        </label>
+        <label>
+            Califica al juego del 1 al 10:
+            <input type="range" id="calificacion" name="calificacion" min="1" max="10" required>
+        </label>
+        <label>
+            Ingresa tu email:
+            <input type="email" id="email" name="email" required>
+        </label>
+        <br><br>
+        <button type="submit">Registrar</button>
+    </form>
+    <br>
+    <table id="consolas" border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Publisher</th>
+                <th>Plataformas</th>
+                <th>Medio</th>
+                <th>Fecha</th>
+                <th>Email</th>
+                <th>Color</th>
+                <th>Calificación</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</body>
+</html>

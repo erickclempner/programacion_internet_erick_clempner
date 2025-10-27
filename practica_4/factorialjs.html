@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de Formularios</title>
+    <link rel="stylesheet" href="../general.css">
+    <script>
+        function filtrado(){
+            var valor = document.getElementById("numero").value;
+            var x = parseInt(valor);
+            console.log("Llamamos a la funcion ciclica");
+            if(x < 0 || isNaN(x)){
+                salida = x + "! = " + factorial(-x);
+            }
+            else
+                salida = x + "! = " + factorial(x);
+            document.getElementById("resultado").innerHTML = salida;
+        }
+
+        function factorial(x){
+            if(x == 0 || x == 1)
+                return 1;
+            else
+                return factorial(x - 1) * x;
+        }
+
+        function borrar(){
+            document.getElementById("numero").value = "";
+            document.getElementById("resultado").innerHTML = "";
+        }
+    </script>
+</head>
+<body>
+    <a href="../index_practicas.html" class="back-to-home">← Volver al Inicio</a>
+    <h1>Manejo de formularios HTML con JS</h1>
+    <h2>Factorial cíclico</h2>
+    <p>Ingresa un numero positivo:</p>
+    <form action="">
+        <input type="number" id="numero" min="0" max="170"> <br>
+    </form>
+    <button onclick="filtrado()">Calcular</button>
+    <button onclick="borrar()">Borrar</button>
+    <p id="resultado"></p>
+</body>
+</html>

@@ -1,0 +1,60 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 24px 12px 48px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  color: #222;
+  background: #f7f7f9;
+  line-height: 1.5;
+}
+
+.page-title,
+h2 {
+  text-align: center;
+}
+
+audio,
+video,
+iframe {
+  display: block;
+  margin: 8px auto 24px;
+  max-width: 100%;
+}
+
+video,
+audio {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 8px;
+}
+
+.simple-embed { 
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 8px;
+}
+
+.map-embed {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 8px;
+}
+
+.fb-page, .fb-post { 
+  margin: 8px auto 24px; 
+}
+
+.fb-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 24px;
+}
+
+.twitter-tweet {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
